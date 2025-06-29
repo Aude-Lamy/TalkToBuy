@@ -476,14 +476,14 @@
    
    /* Assurer que les liens dans le menu mobile sont toujours visibles */
    .main-nav .nav-link {
-     color: var(--color-primary);
+     color: var(--color-primary) !important;
    }
    
    /* Sur la page d'accueil, les liens sont blancs quand le header n'est pas scrollé */
    .header:not(.scrolled) .nav-link {
      color: var(--color-white);
    }
-
+   
    /* Sur les pages de catégorie, les liens sont de couleur primaire quand le header n'est pas scrollé */
    body:not(.home-page) .header:not(.scrolled) .nav-link {
      color: var(--color-primary);

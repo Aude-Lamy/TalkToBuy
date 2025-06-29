@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyrcrea | Boutique Artisanale</title>
+    <meta
+      name="description"
+      content="Découvrez nos produits artisanaux exclusifs, disponibles via messagerie privée"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>"
+    />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <!-- <link rel="stylesheet" href="./css/fa-all.min.css"/> -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="home-page">
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="header-left">
+          <a href="#" class="logo" aria-label="Accueil Cyrcrea">
+            <img
+              src="images/logo/logo-cyrcrea.png"
+              alt="Logo Cyrcrea"
+              width="50"
+              height="50"
+              class="logo-img"
+            />
+          </a>
+        </div>
+
+        <div class="header-right">
+          <div class="mobile-toggle" aria-expanded="false" aria-controls="nav-menu">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </div>
+
+          <nav class="main-nav" aria-label="Menu principal">
+            <ul class="nav-menu" id="nav-menu">
+              <li class="nav-item">
+                <a href="#hero" class="nav-link active" aria-current="page">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a href="#products" class="nav-link">Produits</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Catégories <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./pages/category/category-bijoux.html" class="dropdown-item">Bijoux</a></li>
+                  <li><a href="pages/category/category-accessoires.html" class="dropdown-item">Accessoires</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#how-it-works" class="nav-link">Comment ça marche</a>
+              </li>
+              <li class="nav-item">
+                <a href="#testimonials" class="nav-link">Témoignages</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="hero"
+      aria-label="Section principale"
+    >
+      <div class="hero-background">
+        <div class="hero-overlay"></div>
+        <div class="hero-pattern"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-content-inner">
+            <div class="hero-badge">
+              <i class="fas fa-gem" aria-hidden="true"></i>
+              <span>Artisanat français</span>
+            </div>
+            <h1 class="hero-title">
+              <span class="hero-title-main">Créations Artisanales</span>
+              <span class="hero-title-sub">Uniques & Personnalisées</span>
+            </h1>
+            <p class="hero-description">
+              Découvrez notre collection exclusive de produits faits main avec passion,
+              disponibles uniquement via messagerie privée pour une expérience
+              d'achat personnalisée et authentique.
+            </p>
+            <div class="hero-buttons">
+              <a
+                href="#products"
+                class="btn btn-primary hero-btn"
+                aria-label="Découvrir notre collection"
+              >
+                <span>Découvrir nos Produits</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a
+                href="#how-it-works"
+                class="btn btn-outline-primary hero-btn"
+                aria-label="Comment commander"
+              >
+                <span>Comment commander</span>
+              </a>
+            </div>
+            <div class="hero-features">
+              <div class="hero-feature">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>Fait main en France</span>
+              </div>
+              <div class="hero-feature">
+                <i class="fas fa-truck" aria-hidden="true"></i>
+                <span>Livraison rapide</span>
+              </div>
+              <div class="hero-feature">
+                <i class="fas fa-comments" aria-hidden="true"></i>
+                <span>Service personnalisé</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        href="#products"
+        class="scroll-indicator"
+        aria-label="Défiler vers la section produits"
+      >
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- Section: Produits -->
+    <section id="products" class="products">
+      <div class="container">
+        <h2 class="section-title">Notre Collection Exclusive</h2>
+        <div class="products-grid">
+          <!-- Produit 1 -->
+          <div class="product-card fade-in">
+            <div class="product-card-inner">
+              <!-- Face avant -->
+              <div class="product-front">
+                <div class="product-image">
+                  <img
+                    style="object-fit: cover;"
+                    src="images/products/carnet-cuir.jpg"
+                    alt="Carnet en cuir artisanal"
+                  />
+                </div>
+                <div class="product-details">
+                  <div>
+                    <h3 class="product-name">Carnet en Cuir</h3>
+                    <p class="product-description">
+                      Carnet en cuir véritable fait main avec papier premium
+                    </p>
+                  </div>
+                  <div>
+                    <p class="product-price" aria-label="Prix: 89 euros">89€</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Face arrière -->
+              <div class="product-back">
+                <div class="product-back-content">
+                  <h3 class="product-back-title">Détails du Carnet en Cuir</h3>
+                  <p>
+                    Notre carnet en cuir est fabriqué à la main par des artisans
+                    expérimentés, utilisant des techniques traditionnelles.
+                  </p>
+                  <ul class="product-features">
+                    <li class="product-feature">
+                      Cuir véritable de qualité supérieure
+                    </li>
+                    <li class="product-feature">Papier sans acide 120g/m²</li>
+                    <li class="product-feature">Reliure cousue à la main</li>
+                    <li class="product-feature">Personnalisation disponible</li>
+                  </ul>
+                  <a
+                    href="https://m.me/100064542768551?text=Bonjour, je souhaite personnaliser un Carnet en Cuir. Quelles sont les options disponibles ?"
+                    class="btn btn-messenger"
+                    target="_blank"
+                    aria-label="Demander une personnalisation"
+                  >
+                    <i class="fab fa-facebook-messenger" aria-hidden="true"></i>
+                    Commander par Message
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produit 2 -->
+          <div class="product-card fade-in">
+            <div class="product-card-inner">
+              <!-- Face avant -->
+              <div class="product-front">
+                <div class="product-image">
+                  <img
+                    style="object-fit: cover;"
+                    src="images/products/tasses-ceramique.jpg"
+                    alt="Ensemble de tasses en céramique artisanales"
+                  />
+                </div>
+                <div class="product-details">
+                  <div>
+                    <h3 class="product-name">Set de Tasses Céramiques</h3>
+                    <p class="product-description">
+                      Ensemble de 2 tasses en céramique faites main avec
+                      finition émaillée unique
+                    </p>
+                  </div>
+                  <div>
+                    <p class="product-price" aria-label="Prix: 65 euros">65€</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Face arrière -->
+              <div class="product-back">
+                <div class="product-back-content">
+                  <h3 class="product-back-title">Détails du Set de Tasses</h3>
+                  <p>
+                    Nos tasses en céramique sont façonnées à la main par des
+                    potiers locaux qui s'inspirent de techniques ancestrales.
+                  </p>
+                  <ul class="product-features">
+                    <li class="product-feature">Céramique haute température</li>
+                    <li class="product-feature">Émaux non toxiques</li>
+                    <li class="product-feature">
+                      Pièces uniques avec variations subtiles
+                    </li>
+                    <li class="product-feature">
+                      Convient aux lave-vaisselles
+                    </li>
+                  </ul>
+                  <a
+                    href="https://m.me/100064542768551?text=Bonjour, j'aimerais savoir si vous proposez d'autres coloris pour les tasses en céramique ?"
+                    class="btn btn-messenger"
+                    target="_blank"
+                    aria-label="Demander d'autres couleurs"
+                  >
+                    <i class="fab fa-facebook-messenger" aria-hidden="true"></i>
+                    Commander par Message
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produit 3 -->
+          <div class="product-card fade-in">
+            <div class="product-card-inner">
+              <!-- Face avant -->
+              <div class="product-front">
+                <div class="product-image">
+                  <img
+                    style="object-fit: cover;"
+                    src="images/products/plaid-laine.jpg"
+                    alt="Plaid en laine tissé à la main"
+                  />
+                </div>
+                <div class="product-details">
+                  <div>
+                    <h3 class="product-name">Plaid en Laine Tissé</h3>
+                    <p class="product-description">
+                      Plaid en laine tissé à la main avec teintures naturelles,
+                      luxueusement doux
+                    </p>
+                  </div>
+                  <div>
+                    <p class="product-price" aria-label="Prix: 129 euros">
+                      129€
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Face arrière -->
+              <div class="product-back">
+                <div class="product-back-content">
+                  <h3 class="product-back-title">Détails du Plaid en Laine</h3>
+                  <p>
+                    Notre plaid en laine tissé est l'aboutissement d'un
+                    savoir-faire traditionnel et d'une sélection rigoureuse de
+                    matières premières.
+                  </p>
+                  <ul class="product-features">
+                    <li class="product-feature">
+                      Laine mérinos éthique et traçable
+                    </li>
+                    <li class="product-feature">
+                      Teinture avec pigments végétaux
+                    </li>
+                    <li class="product-feature">
+                      Dimensions généreuses: 130 × 180 cm
+                    </li>
+                    <li class="product-feature">Entretien facile et durable</li>
+                  </ul>
+                  <a
+                    href="https://m.me/100064542768551?text=Bonjour, j'aimerais connaître les différentes dimensions disponibles pour le Plaid en Laine Tissé."
+                    class="btn btn-messenger"
+                    target="_blank"
+                    aria-label="Demander les dimensions"
+                  >
+                    <i class="fab fa-facebook-messenger" aria-hidden="true"></i>
+                    Commander par Message
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Comment ça marche -->
+    <section
+      id="how-it-works"
+      class="how-it-works"
+      aria-label="Comment ça marche"
+    >
+      <div class="container">
+        <h2 class="section-title">Comment Ça Marche</h2>
+        <p>
+          Nous avons simplifié le shopping pour rendre votre expérience
+          personnelle et fluide.
+        </p>
+
+        <div class="steps">
+          <!-- Step 1 -->
+          <div class="step fade-in">
+            <div class="step-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3 class="step-title">Découvrir</h3>
+            <p>
+              Parcourez notre collection exclusive d'articles artisanaux et
+              trouvez ce qui vous parle.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step fade-in">
+            <div class="step-icon">
+              <i class="fas fa-comment-dots"></i>
+            </div>
+            <h3 class="step-title">Contacter</h3>
+            <p>
+              Cliquez sur le bouton "Commander par Message" pour démarrer une
+              conversation avec nous concernant le produit.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step fade-in">
+            <div class="step-icon">
+              <i class="fas fa-gift"></i>
+            </div>
+            <h3 class="step-title">Recevoir</h3>
+            <p>
+              Nous gérons le paiement de manière sécurisée et vous livrons
+              directement votre article magnifiquement emballé.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Témoignages -->
+    <section
+      id="testimonials"
+      class="testimonials"
+      aria-label="Témoignages clients"
+    >
+      <div class="container testimonials-container">
+        <h2 class="section-title">Ce Que Nos Clients Disent</h2>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial fade-in">
+            <div class="testimonial-content">
+              <p>
+                "L'approche personnalisée via la messagerie a fait toute la
+                différence. J'ai obtenu exactement ce que je voulais, et le
+                savoir-faire a dépassé mes attentes. Je commanderai certainement
+                à nouveau !"
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img
+                  src="images/testimonials/client-homme.jpeg"
+                  alt="Client Portrait"
+                />
+              </div>
+              <div class="author-details">
+                <strong class="testimonial-name">Michel Laurent</strong>
+                <p>Client fidèle</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial fade-in">
+            <div class="testimonial-content">
+              <p>
+                "Je cherchais quelque chose d'unique pour l'anniversaire de ma
+                mère. L'équipe a été incroyablement utile pour personnaliser le
+                cadeau parfait. L'emballage était aussi beau que le produit
+                lui-même !"
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img
+                  src="images/testimonials/client-femme.jpeg"
+                  alt="Client Portrait"
+                />
+              </div>
+              <div class="author-details">
+                <strong class="testimonial-name">Sophie Martin</strong>
+                <p>Cliente satisfaite</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Contact -->
+    <section id="contact" class="contact" aria-label="Contactez-nous">
+      <div class="container">
+        <h2 class="section-title">Contactez-Nous</h2>
+        <p class="contact-subtitle">
+          Vous avez des questions sur nos produits ou êtes intéressé par une
+          commande ? Contactez-nous par votre canal préféré.
+        </p>
+
+        <div class="contact-methods">
+          <!-- Messenger -->
+          <div class="contact-method fade-in">
+            <div class="contact-icon">
+              <i class="fab fa-facebook-messenger"></i>
+            </div>
+            <h3 class="contact-method-title">Facebook Messenger</h3>
+            <p>Pour une réponse rapide et passer commande</p>
+            <a
+              href="https://m.me/100064542768551"
+              class="btn btn-messenger"
+              target="_blank"
+              aria-label="Nous contacter sur Messenger"
+              >Envoyez-nous un Message</a
+            >
+          </div>
+
+          <!-- Instagram -->
+          <div class="contact-method fade-in">
+            <div class="contact-icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <h3 class="contact-method-title">Instagram</h3>
+            <p>
+              Plongez dans notre univers créatif et laissez-vous inspirer par
+              nos réalisations.
+            </p>
+            <a
+              href="https://www.instagram.com/cyrcrea?igsh=MXczYmswYWc5NXQwdg=="
+              class="btn btn-outline-dark"
+              target="_blank"
+              aria-label="Suivez-nous sur Instagram"
+              >Suivez-nous sur Instagram</a
+            >
+          </div>
+
+          <!-- TikTok -->
+          <div class="contact-method fade-in">
+            <div class="contact-icon">
+              <i class="fab fa-tiktok"></i>
+            </div>
+            <h3 class="contact-method-title">TikTok</h3>
+            <p>
+              Des idées, des astuces et des créations uniques : retrouvez-nous
+              sur TikTok.
+            </p>
+            <a
+              href="https://www.tiktok.com/@cyrcrea"
+              class="btn btn-outline-dark"
+              target="_blank"
+              aria-label="Suivez-nous sur TikTok"
+              >Suivez-nous sur TikTok</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-logo">
+          <img
+            src="images/logo/logo-cyrcrea.png"
+            alt="Logo Cyrcrea"
+            style="width: 70px; height: auto"
+          />
+        </div>
+
+        <ul class="footer-nav">
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Accueil</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#products" class="footer-nav-link">Produits</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#how-it-works" class="footer-nav-link"
+              >Comment Ça Marche</a
+            >
+          </li>
+          <li class="footer-nav-item">
+            <a href="#testimonials" class="footer-nav-link">Témoignages</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#contact" class="footer-nav-link">Contact</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Politique de Confidentialité</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Conditions de Service</a>
+          </li>
+        </ul>
+
+        <ul class="social-links">
+          <!-- Facebook -->
+          <li class="social-item">
+            <a
+              href="https://www.facebook.com/profile.php?id=100064542768551"
+              class="social-link"
+              target="_blank"
+              aria-label="Visiter notre page Facebook"
+            >
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+          </li>
+          <!-- Instagram -->
+          <li class="social-item">
+            <a
+              href="https://www.instagram.com/cyrcrea?igsh=MXczYmswYWc5NXQwdg=="
+              class="social-link"
+              target="_blank"
+              aria-label="Visiter notre page Instagram"
+            >
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <!-- TikTok -->
+          <li class="social-item">
+            <a
+              href="https://www.tiktok.com/@cyrcrea"
+              class="social-link"
+              target="_blank"
+              aria-label="Visiter notre page TikTok"
+            >
+              <i class="fab fa-tiktok" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div class="footer-bottom">
+          <p class="copyright">&copy; 2025 Cyrcrea. Tous droits réservés.</p>
+          <div class="footer-separator">
+            <span></span>
+          </div>
+          <div class="developer-info">
+            <p>
+              Site développé par
+              <a
+                href="https://papoel.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Papoel</a
+              >
+              • <a href="mailto:papoel.dev@gmail.com">papoel.dev@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script> 
+  </body>
+</html>

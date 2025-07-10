@@ -377,7 +377,7 @@
      z-index: 100;
      transition: var(--transition-standard);
      padding: 0.8rem var(--space-md);
-     background-color: transparent;
+     background-color: var(--color-white);
    }
    
    .header.scrolled {
